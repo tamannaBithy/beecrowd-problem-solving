@@ -20,6 +20,6 @@ const modifiedB = parseFloat(B.toFixed(1))
 const modifiedC = parseFloat(C.toFixed(1))
 
 const average = (modifiedA * weightA + modifiedB * weightB + modifiedC * weightC) / (weightA + weightB + weightC);
-const MEDIA = parseFloat(average.toFixed(5))
+const MEDIA = parseFloat(average.toFixed(1))
 
 console.log(MEDIA);
