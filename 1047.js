@@ -8,4 +8,22 @@
 // Output
 // Print the duration of the game in hours and minutes, in this format: “O JOGO DUROU XXX HORA(S) E YYY MINUTO(S)” . Which means: the game lasted XXX hour(s) and YYY minutes.
 
+const startHour = 7;
+const startMinute = 10;
+const endHour = 7;
+const endMinute = 9;
 
+const totalStartHour = startHour * 60 + startMinute;
+const totalEndHour = endHour * 60 + endMinute;
+
+let minuteGap = totalEndHour - totalStartHour;
+
+if (minuteGap <= 0) {
+    minuteGap += 1440;
+}
+
+const finalHour = Math.floor(minuteGap / 60)
+const finalMinute = minuteGap % 60;
+
+console.log(finalHour);
+console.log(finalMinute);
