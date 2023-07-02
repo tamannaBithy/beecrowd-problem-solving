@@ -19,3 +19,22 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(max);
 console.log(position);
+
+
+//// 2nd way ///////
+
+
+
+function highest(numbers) {
+    const max = Math.max(...numbers);
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] === max) {
+        return `${max}, ${i + 1}`;
+      }
+    }
+  }
+  
+  const numbers = [2, 113, 45, 34565, 6, 8];
+  const result = highest(numbers);
+  
+  console.log(result);
