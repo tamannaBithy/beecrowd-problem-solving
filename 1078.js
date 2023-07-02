@@ -4,10 +4,9 @@
 // Input
 // The input is an integer N (1 < N < 1000).
 
-
 const n = 140;
 
-for (let i = 1; i <= 10; i++){
-    const multiplier = i * n;
-    console.log(multiplier);
+for (let i = 1; i <= 10; i++) {
+  const multiplier = i * n;
+  console.log(multiplier);
 }
