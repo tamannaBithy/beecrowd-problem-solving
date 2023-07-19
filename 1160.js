@@ -1,10 +1,7 @@
-let currentLine = 1;
-
 let PA = 100;
 let PB = 150;
 const G1 = 1.0;
 const G2 = 0;
-currentLine++;
 
 let years = 0;
 
