@@ -8,38 +8,21 @@
 // Output
 // Print the sum of all consecutive odd numbers from X.
 
-let x = 7;
-const y = 4;
 
-let sum = 0;
 
-for (let i = 0; i < y; i++) {
-  for (let j = 0; j < 1; j++) {
+function calculateSum(x, y) {
+  let sum = 0;
+  for (let i = 0; i < y; i++) {
     if (x % 2 === 0) {
-      x += 1;
-    } else if (x % 2 !== 0) {
-      sum += x;
-      x += 2;
+      sum += x + 2 * i + 1;
+    } else {
+      sum += x + 2 * i;
     }
   }
-
-  console.log(x);
+  return sum;
 }
 
-console.log(sum);
-
-//     let X = 4;
-//     const Y = 3;
-
-//   let sum = 0;
-//   let count = 0;
-
-//   while (count < Y) {
-//     if (X % 2 !== 0) {
-//       sum += X;
-//       count++;
-//     }
-//     X++;
-//   }
-
-//   console.log(sum);
+// console.log(calculateSum(4, 5));
+console.log(calculateSum(7, 4));
+// console.log(calculateSum(4, 3));
+// console.log(calculateSum(11, 2));
