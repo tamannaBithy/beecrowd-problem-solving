@@ -5,12 +5,14 @@
 // Input
 // The input contains several test cases and ends with EOF. Each test case consists of a line containing a number N of complaints about the world cup forwarded to the president (0 ≤ N ≤ 100).
 
-const arr = [0, 1, 0, 2, 100, 0];
+const arr = [0, 1, 0, 2, 100, 0, "-0f", 8];
 
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 0) {
-        console.log("vai ter copa!");
-    } else {
-        console.log("vai ter duas!");
-    }
+  if (isNaN(arr[i])) break; /// eof(end of file) checking
+
+  if (arr[i] === 0) {
+    console.log("vai ter copa!");
+  } else {
+    console.log(arr[i], "vai ter duas!");
+  }
 }
